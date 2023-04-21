@@ -15,12 +15,12 @@ Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-2.9
 
 ## Tech Stack
 
-**C#, .Net6.0, .NetStandard2.1**, 
+**Vanilla Javascript, Jest, Axios**, 
 
 
 ## How Do I Get Started
 
-First, install NuGet. Then, install CountryRegion from the package manager console:
+First, install NPM package. Then, install CountryRegion from the package manager console:
 
 ```C#   
    NuGet\Install-Package CountryRegion -Version 1.0.10
@@ -46,7 +46,15 @@ Finally, import into the file:
 - Get a state
 - Get a local government
 
-## Sample usage
+
+## **Testing**
+To run unit tests:
+
+```shell
+yarn test
+```
+
+## Documentation
 
 ```C#
    await Region.Countries();
@@ -148,21 +156,16 @@ Finally, import into the file:
 
 
 
-## Thanks to all Contributors
+## **License**
 
-Maintainers:
+[MIT](LICENSE) Copyright 2023
 
-- [slimcent](https://github.com/Slimcent) 
-- [king-Alex-d-great](https://github.com/king-Alex-d-great)
-- [sixxxxxxxxxxx](https://github.com/sixxxxxxxxxxx)
-- [bubethedev](https://github.com/bubethedev)
-- [dabz-codes](https://github.com/dabz-codes)
-- [albert-tarkaa](https://github.com/albert-tarkaa)
-
-## Contributing
+## **Contributing**
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See `contributing.md` for ways to get started
 
-Please adhere to this project's `code of conduct`.
+## **Code Of Conduct**
+Please adhere to this project's 
+[Code of Conduct](code_of_conduct.md) .
