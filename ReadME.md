@@ -15,14 +15,12 @@ Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-3.5
 
 NPM downloads: ![downloads](https://img.shields.io/badge/downloads-100-brightgreen)
 
-## **Tech Stack**
-
-Vanilla Javascript, Jest, Axios 
+**Vanilla Javascript, Jest, Axios**, 
 
 
 ## **How Do I Get Started**
 
-Install `CountryRegionJS` with npm
+First, install NPM package. Then, install CountryRegion from the package manager console:
 
 ```bash
   npm install CountryRegionJS
@@ -62,9 +60,112 @@ To run unit tests:
 yarn test
 ```
 
+## Documentation
+
+## **Testing**
+To run unit tests:
+
+```shell
+yarn test
+```
+
 ## **License**
 
 [MIT](LICENSE) Copyright 2023 OGUBUIKE ALEX
+
+---
+```C#
+   await Region.GetStates(countryId);
+```
+
+- Input
+
+| Parameter	  | Type     | Description																|
+| :--------   | :------- | :-------------------------												|
+| `countryId` | `int`	 | **Required**. The id of the country to get the states associated with it	|
+
+- Output
+
+| Type							 |
+| :-------						 |
+| `Task<IEnumerable<Response?>>` |
+
+---
+```C#
+   await Region.GetLGAs(countryId, stateId);
+```
+
+- Input
+
+| Parameters	| Type		| Description															|
+| :--------		| :-------	| :-------------------------											|
+| `countryId`,	| `int`		| **Required**. The id of the country to get the local governments from |
+| `stateId`		| `int`		| **Required**. The id of the state to get the local governments from	|
+
+- Output
+
+| Type							 |
+| :-------						 |
+| `Task<IEnumerable<Response?>>` |
+
+---
+```C#
+   await Region.GetCountry(countryId);
+```
+
+- Input
+
+| Parameter	  | Type  | Description								   |
+| :--------			  | :------- | :-------------------------	   |
+| `countryId` | `int` | **Required**. The id of the country to get |
+
+- Output
+
+| Type				|
+| :-------			|
+| `Task<Response?>` |
+
+---
+```C#
+   await Region.GetState(countryId, stateId);
+```
+
+- Input
+
+| Parameters	| Type     | Description											|
+| :--------		| :------- | :-------------------------								|
+| `countryId`,  | `int`	| **Required**. The id of the country to get a state from	|
+| `stateId`		| `int`	| **Required**. The id of the state to get					|
+
+- Output
+
+| Type				|
+| :-------			|
+| `Task<Response?>`	|
+
+---
+```C#
+   await Region.GetLGA(stateId, lgaId);
+```
+
+- Input
+
+| Parameters | Type     | Description													  |
+| :--------	 | :------- | :-------------------------									  |
+| `stateId`	 | `int`	| **Required**. The id of the state to get local government from  |
+| `lgaId`	 | `int?`	| **Required**. The name of the local government in that state	  |
+
+- Output
+
+| Type     |
+| :------- |
+| `Task<Response?>` |
+
+
+
+## **License**
+
+[MIT](LICENSE) Copyright 2023
 
 ## **Contributing**
 
