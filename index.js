@@ -25,6 +25,18 @@ class CountryRegion {
             id: country?.country?.id
         }
     }
+
+    getStates = async (countryId) =>
+        (await this._getBlob())
+            .data.find(item => item?.country?.id == countryId)
+            ?.country?.states ?? null;
+
+    getState = async (countryId, stateId) =>
+        (await this._getBlob())
+            .data.find(item => item?.country?.id == countryId)
+            ?.country?.states?.find(item => item?.id == stateId) ?? null;
+
+   
 }
 
 module.exports = CountryRegion;
