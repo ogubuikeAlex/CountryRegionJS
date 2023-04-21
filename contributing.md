@@ -29,4 +29,4 @@ We welcome code contributions from everyone! To contribute code, please follow t
 Please ensure that your code follows our coding style and conventions, and that it includes tests for any new functionality or bug fixes.
 
 ## Code of Conduct
-Please note that we have a code of conduct in place to ensure that our project is a welcoming and inclusive environment for everyone. By contributing to our project, you agree to abide by our code of conduct. You can read our code of conduct [here](https://github.com/king-Alex-d-great/).
+Please note that we have a code of conduct in place to ensure that our project is a welcoming and inclusive environment for everyone. By contributing to our project, you agree to abide by our code of conduct. You can read our code of conduct [here](code_of_conduct.md).
