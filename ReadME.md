@@ -46,6 +46,9 @@ Sample usage:
    //check out the documentation section for more
 ```
 
+## **Documentation**
+A comprehensive documentation is underway💥
+
 ## **Features**
 - Get all countries
 - Get all states
