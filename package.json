@@ -1,6 +1,6 @@
 {
   "name": "countryregionjs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A cascading dropdown for loading countries and associated states and local governments.",
   "main": "index.js",
   "scripts": {
