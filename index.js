@@ -1,10 +1,10 @@
-import { get } from 'axios';
+import axios from 'axios';
 import { RESOURCE_URL } from './utilities/constants';
 
 class CountryRegion {
     blob = null;
     _getBlob = async () => {
-        return this.blob ??= await get(`${RESOURCE_URL}`);
+        return this.blob ??= await axios.get(`${RESOURCE_URL}`);
     }
 
     getCountries = async () =>
