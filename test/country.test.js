@@ -1,16 +1,16 @@
-const CountryRegion = require("..");
-const { NAME, ID, ONE, INVALID_LGA_VALUE: INVALID_VALUE } = require("../Utilities/constants");
+import CountryRegion from "..";
+import { NAME, ID, ONE, INVALID_LGA_VALUE as INVALID_VALUE } from "../utilities/constants";
 
 const countryRegion = new CountryRegion();
 test('getCountries returns an array of objects with `name` and `id` properties', async () => {
-    const countries = await countryRegion.getCountries();
+  const countries = await countryRegion.getCountries();
 
-    expect(Array.isArray(countries)).toBe(true);
+  expect(Array.isArray(countries)).toBe(true);
 
-    countries.forEach(country => {
-        expect(country).toHaveProperty(NAME);
-        expect(country).toHaveProperty(ID);
-    });
+  countries.forEach(country => {
+    expect(country).toHaveProperty(NAME);
+    expect(country).toHaveProperty(ID);
+  });
 });
 
 test('getCountry returns an object with `name` and `id` properties for a valid country ID', async () => {

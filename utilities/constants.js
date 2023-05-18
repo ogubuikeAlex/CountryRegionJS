@@ -6,10 +6,10 @@ const INVALID_LGA_VALUE = 999;
 const NAME = 'name';
 const ID = 'id';
 
-module.exports = { 
-    RESOURCE_URL, ZERO, 
-    ONE, 
-    COUNTRY_WITH_VALID_LOCALS, 
+export {
+    RESOURCE_URL, ZERO,
+    ONE,
+    COUNTRY_WITH_VALID_LOCALS,
     INVALID_LGA_VALUE,
     NAME, ID
 }

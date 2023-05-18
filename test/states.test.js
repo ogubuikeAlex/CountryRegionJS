@@ -1,5 +1,5 @@
-const CountryRegion = require("..");
-const { ONE, NAME, ID, INVALID_LGA_VALUE: INVALID_VALUE } = require("../Utilities/constants");
+import CountryRegion from "..";
+import { ONE, NAME, ID, INVALID_LGA_VALUE as INVALID_VALUE } from "../utilities/constants";
 const countryRegion = new CountryRegion();
 
 test('getStates returns an array of objects for a valid country ID', async () => {

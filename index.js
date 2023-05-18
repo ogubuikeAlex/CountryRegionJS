@@ -1,10 +1,10 @@
-const axios = require('axios');
-const { RESOURCE_URL } = require('./Utilities/constants');
+import { get } from 'axios';
+import { RESOURCE_URL } from './utilities/constants';
 
 class CountryRegion {
     blob = null;
     _getBlob = async () => {
-        return this.blob ??= await axios.get(`${RESOURCE_URL}`);
+        return this.blob ??= await get(`${RESOURCE_URL}`);
     }
 
     getCountries = async () =>
@@ -48,4 +48,4 @@ class CountryRegion {
             ?.locals?.find(item => item?.id == lgaId) ?? null;
 }
 
-module.exports = CountryRegion;
+export default CountryRegion;
