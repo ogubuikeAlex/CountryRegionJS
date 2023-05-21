@@ -1,6 +1,6 @@
 const ZERO = 0;
 const ONE = 1;
-const RESOURCE_URL = 'https://gist.githubusercontent.com/king-Alex-d-great/f13f855ec84d6f30f7f8874a02c115ec/raw/53274df3bf5574963f437ce012bdce7c31ca3305/countries.json';
+const RESOURCE_URL = 'https://gist.githubusercontent.com/king-Alex-d-great/8c8bb9f617ccd51e1efbbbede558044f/raw/2f1a0577c117e75d73140a5bbb01bd72625334a0/countriesv2.json';
 const COUNTRY_WITH_VALID_LOCALS = 160;
 const INVALID_LGA_VALUE = 999;
 const NAME = 'name';
