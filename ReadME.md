@@ -12,7 +12,7 @@ stable release version: ![version](https://img.shields.io/badge/version-1.1.3-bl
 
 Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-~5k-brightgreen)
 
-NPM downloads: ![downloads](https://img.shields.io/badge/downloads-100-brightgreen)
+NPM downloads: ![downloads](https://img.shields.io/badge/downloads-400+-brightgreen)
 
 ## **Tech Stack**
 Vanilla Javascript, Jest, Axios
