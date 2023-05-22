@@ -1,16 +1,15 @@
 ![CountryRegion A cascading dropdown for loading countries and associated states and local governments.](https://raw.githubusercontent.com/Slimcent/CountryRegion/master/images/CountryRegion.png)
 
 # **CountryRegion**
-
-A cascading dropdown for loading countries and associated states and local governments.
+CountryRegionJs is a simple-to-use library that provides you with **the MOST COMPREHENSIVE** cascading dropdown for loading countries, associated states and substates (local governments).
 
 ## **Badges**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-stable release version: ![version](https://img.shields.io/badge/version-1.1.3-blue)
+stable release version: ![version](https://img.shields.io/badge/version-1.1.4-blue)
 
-Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-~5k-brightgreen)
+Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-~5k-yellow)
 
 NPM downloads: ![downloads](https://img.shields.io/badge/downloads-400+-brightgreen)
 
@@ -30,17 +29,38 @@ or with yarn
    yarn add CountryRegionJS
 ```
 
-Finally, import into the file:
-```javascript 
-   import CountryRegion from "countryregionjs";
-```
-
 Sample usage:
 ```javascript 
-   const id = 1;
-   const country = countryRegion.getCountry(id);
 
-   //check out the documentation section for more
+   //import countryregionjs
+   import CountryRegion from "countryregionjs";
+
+   const countryRegion = new CountryRegion();
+
+    //sample ids
+   const countryId = 1;
+   const stateId = 1;
+   const substateId = 1;
+
+   //get all countries
+   const countries = await countryRegion.getCountries();
+
+   //get all statess
+   const states = await countryRegion.getStates(countryId);
+
+   //get all substates
+   const subStates = await countryRegion.getLGAs(countryId, stateId);  
+
+   //get a country   
+   const country = await countryRegion.getCountry(countryId);
+
+   //get a state
+   const id = 1;
+   const country = await countryRegion.getState(countryId, stateId);
+
+   //get a sub-state
+   const id = 1;
+   const country = await countryRegion.getLga(countryId, stateId, substateId);
 ```
 
 ## **Documentation**
@@ -59,7 +79,7 @@ A comprehensive documentation is underway💥
 To run unit tests:
 
 ```shell
-yarn test
+npm test
 ```
 
 ## **License**
