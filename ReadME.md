@@ -8,17 +8,14 @@ A cascading dropdown for loading countries and associated states and local gover
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-stable release version: ![version](https://img.shields.io/badge/version-1.0.1-blue)
+stable release version: ![version](https://img.shields.io/badge/version-1.1.3-blue)
 
-
-Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-3.5K-brightgreen)
+Nuget package downloads: ![downloads](https://img.shields.io/badge/downloads-~5k-brightgreen)
 
 NPM downloads: ![downloads](https://img.shields.io/badge/downloads-100-brightgreen)
 
 ## **Tech Stack**
-
-Vanilla Javascript, Jest, Axios 
-
+Vanilla Javascript, Jest, Axios
 
 ## **How Do I Get Started**
 
@@ -35,7 +32,7 @@ or with yarn
 
 Finally, import into the file:
 ```javascript 
-   const countryRegion = require('CountryRegionJS');
+   import CountryRegion from "countryregionjs";
 ```
 
 Sample usage:
