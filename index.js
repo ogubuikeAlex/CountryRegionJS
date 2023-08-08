@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { RESOURCE_URL } from './utilities/constants';
+import { RESOURCE_URL } from './utilities/constants.js';
 
 class CountryRegion {
     blob = null;
